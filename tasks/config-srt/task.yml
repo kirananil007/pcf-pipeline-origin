@@ -11,8 +11,12 @@ inputs:
   - name: pcf-pipelines
 
 run:
-  path: pcf-pipelines/tasks/config-srt/task.sh
-
+  path: /bin/sh
+  args:
+  - -c
+  - |
+    chmod +x pcf-pipelines/tasks/config-srt/task.sh
+    ./pcf-pipelines/tasks/config-srt/task.sh
 params:
   IAAS:
   OPSMAN_DOMAIN_OR_IP_ADDRESS:
