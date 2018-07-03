@@ -41,6 +41,5 @@ run:
   args:
   - -c 
   - |
-    cd pcf-pipelines/install-pcf/aws/tasks/prepare-rds/
-    chmod +x task.sh
-    ./task.sh
+    chmod +x pcf-pipelines/install-pcf/aws/tasks/prepare-rds/task.sh
+    ./pcf-pipelines/install-pcf/aws/tasks/prepare-rds/task.sh
