@@ -1,7 +1,7 @@
 jobs:
 - name: bootstrap-terraform-state
   plan:
-    - get: pcf-pipelines
+  - get: pcf-pipelines
   - file: pcf-pipelines/tasks/create-initial-terraform-state/task.yml
     params:
       AWS_ACCESS_KEY_ID: {{aws_access_key_id}}
