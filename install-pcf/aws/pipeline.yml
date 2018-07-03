@@ -219,7 +219,7 @@ jobs:
       passed:
       - upload-ert
       trigger: true
-  - file: pcf-pipelines/tasks/config-srt/task.yml
+  - file: pcf-pipelines/tasks/configure-ert/task.yml
     params:
       APPS_DOMAIN: {{apps_domain}}
       CONTAINER_NETWORKING_NW_CIDR: {{container_networking_nw_cidr}}
