@@ -52,4 +52,10 @@ params:
   OPSMAN_ALLOW_SSH_CIDR_RANGES:
   OPSMAN_ALLOW_HTTPS_CIDR_RANGES:
 run:
-  path: pcf-pipelines/install-pcf/aws/tasks/prepare-aws/task.sh
+  path: /bin/sh
+  args:
+  - -c
+  - |
+    cd pcf-pipelines/install-pcf/aws/tasks/prepare-aws/
+    chmod +x task.sh
+    ./task.sh
