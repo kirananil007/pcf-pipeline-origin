@@ -2,7 +2,7 @@
 
 set -eu
 
-ami=$(cat ami/ami)
+ami=$(cat ../../../../../ami/ami)
 
 OPSMAN_ALLOW_SSH=0
 OPSMAN_ALLOW_SSH_CIDR_LIST='["0.0.0.0/32"]'
